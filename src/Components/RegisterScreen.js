@@ -4,6 +4,8 @@ import "../StyleSheet/registerScreen.css"
 
 import axios from "axios";
 
+axios.defaults.baseURL = process.env.BACKEND_API_ENDPOINT
+
 const RegisterScreen = () => {
 
     const [registerPopup,showRegisterPopup]=useState("hide")
