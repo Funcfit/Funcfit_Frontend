@@ -30,7 +30,7 @@ const RegisterScreen = () => {
             password_confirmation: password_confirmation
         };
         axios
-            .post(process.env.BACKEND_API_ENDPOINT+'/auth/signup', creds)
+            .post('https://funcfit-backend.onrender.com/auth/signup', creds)
             .then((res) => {
                 if (res.data) {
                     setPopupMsg(JSON.stringify(res.data))

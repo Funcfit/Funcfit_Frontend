@@ -32,7 +32,7 @@ const LoginScreen=(props)=>{
             password: password
         };
         axios
-            .post(process.env.BACKEND_API_ENDPOINT+'/auth/signin', creds)
+            .post('https://funcfit-backend.onrender.com/auth/signin', creds)
             .then((res) => {
                 
                 if (res.data) {
